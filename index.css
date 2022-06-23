@@ -1,0 +1,47 @@
+/* ID's */
+#body {
+    margin: 0;
+}
+#main{
+    border: 1px solid black;
+    width: auto;
+    margin: 0;
+    height: 830px;
+    
+}
+
+#first-page{
+    border: 1px solid black;
+    width: 100%;
+    height: 600px;
+}
+
+#nav-bar{
+    border: 1px solid black;
+    width: 100%;
+    height: 80px;
+}
+#nav-list{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+#my-pic{
+    border: 1px solid black;
+    border-radius: 45%;
+    width: 300px;
+    height: 300px;
+    margin-left: 1250px;
+    margin-top: 50px;
+}
+
+/* CLASSES */
+.nav-bar-id{
+    margin-right: 50px;
+    border: 1px solid black;
+    padding: 20px;
+    list-style: none;
+}
+.nav-links{
+    text-decoration: none;
+}
