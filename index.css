@@ -1,47 +1,117 @@
 /* ID's */
 #body {
     margin: 0;
+    font-family: 'Arsenal', sans-serif;
+    font-family: 'Dongle', sans-serif;;
 }
 #main{
     border: 1px solid black;
     width: auto;
     margin: 0;
-    height: 830px;
+    height: 1850px;
+    background-image: linear-gradient(#9e9e9e, #273036);
+    width: 100%;
     
 }
 
 #first-page{
-    border: 1px solid black;
+    background-image: linear-gradient(rgb(121, 121, 121), #273036);
     width: 100%;
-    height: 600px;
+    height: 750px;
+}
+#first-pageoutline{
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-image: linear-gradient(#9e9e9e, #273036);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#second-pageoutline{
+    border:1px solid black;
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-image: linear-gradient(#9e9e9e, #273036);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #nav-bar{
-    border: 1px solid black;
     width: 100%;
     height: 80px;
+    position:fixed;
+    display: inline-block;
+    justify-content: space-around;
 }
 #nav-list{
     display: flex;
     justify-content: flex-end;
-    margin-right: 100px;
+    margin-right: 120px;
+    margin-left: 870px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 #my-pic{
     border: 1px solid black;
-    border-radius: 45%;
-    width: 300px;
-    height: 300px;
-    margin-left: 1250px;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
     margin-top: 50px;
+    background-image: url("https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/273769724_4795165370551322_2418480384812829365_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_ohc=HsDfw_x0UC4AX9eh35D&_nc_ht=scontent-lax3-2.xx&oh=00_AT-zsPdJ8E_lYh4rdeyUhDaWC0xaiKlqiTpo19cEIv2R6w&oe=62B9D713");
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+#my-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#who-ami{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+#my-name{
+    font-size: 40px;
+    margin-top: 0;
+}
 /* CLASSES */
 .nav-bar-id{
-    margin-right: 50px;
-    border: 1px solid black;
     padding: 20px;
     list-style: none;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 35px;
+    padding-bottom: 10px;
+    
+}
+.nav-bar-id:hover{
+    background-image: linear-gradient(#575757, #9e9e9e);
+
 }
 .nav-links{
     text-decoration: none;
+    color: black;
+    
+}
+.nav-links:hover{
+
+    
+}
+.first-half{
+
+    height: 80%;
+    width: 50%;
+}
+.hide{
+    display: none;
+}
+.my-text{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 30px;
 }
