@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Dongle&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>David Sandoval: Portfolio</title>
 </head>
 <body id="body">
@@ -15,7 +16,7 @@
         <ul id="nav-list">
             <li class="nav-bar-id"><a class="nav-links" href="#first-pageoutline">About Me</a></li>
             <li class="nav-bar-id"><a class="nav-links" href="#second-page">Projects</a></li>
-            <li class="nav-bar-id"><a class="nav-links" href="">Contact Me</a></li>
+            <li class="nav-bar-id"><a class="nav-links" href="#third-page">Contact Me</a></li>
         </ul>
     </div>
     <div id="main">
@@ -73,7 +74,17 @@
             
             <div id="third-page">
                 <div id="third-pageoutline">
-                    
+                    <div id="contact-area">
+                        <h1>Contact Me!</h1>
+                        <label class="input-labels" for="name">Full Name</label>
+                        <input class="input" id="name" type="text" placeholder="Name">
+                        <label class="input-labels" for="email">Email</label>
+                        <input class="input" id="email" type="email" placeholder="user@gmail.com">
+                        <label class="input-labels" for="phone">Phone</label>
+                        <input class="input" id="phone" type="phone" placeholder="(XXX)-XXX-XXX">
+                        <label class="input-labels" for="message">Message</label>
+                        <textarea class="input" id="message" type="text" placeholder="Write a message..."></textarea>
+                    </div>
                 </div>
             </div>
         </div>
