@@ -12,7 +12,7 @@ html {
     border: 1px solid black;
     width: auto;
     margin: 0;
-    height: 2750px;
+    height: 2730px;
     background-image: linear-gradient(#9e9e9e, #273036);
     width: 100%;
     
@@ -24,7 +24,7 @@ html {
     height: 900px;
 }
 #second-page{
-    background-image: linear-gradient(rgb(121, 121, 121), #232321);
+    background-image: linear-gradient(#273036, rgb(121, 121, 121));
     width: 100%;
     height: 920px;
 }
@@ -34,7 +34,7 @@ html {
     width: 100%;
     height: 920px;
 }
-    #first-pageoutline{
+#first-pageoutline{
     width: 1400px;
     height: 100%;
     margin: 0 auto;
@@ -47,7 +47,7 @@ html {
     height: 100%;
     margin: 0 auto;
     display: flex;
-    background-image: linear-gradient(#6b6b6b, #273036);
+    background-image: linear-gradient(#273036, #6b6b6b);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
@@ -182,9 +182,9 @@ html {
 
 #contact-area{
     width: 500px;
-    height: 550px;
+    height: 750px;
     margin: 0 auto;
-    margin-top: 300px;
+    margin-top: 150px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     display: flex;
     flex-direction: column;
@@ -197,6 +197,11 @@ html {
 #message{
 height: 150px;
     
+}
+#social-media{
+}
+#find-me{
+    margin-left: 35px;
 }
 /* CLASSES */
 
@@ -261,3 +266,22 @@ height: 150px;
 .input-labels{
     font-size: 25px;
 }
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
