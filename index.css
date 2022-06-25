@@ -24,13 +24,13 @@ html {
     height: 900px;
 }
 #second-page{
-    background-image: linear-gradient(rgb(121, 121, 121), #554238);
+    background-image: linear-gradient(rgb(121, 121, 121), #232321);
     width: 100%;
     height: 920px;
 }
 
 #third-page{
-    background-image: linear-gradient(rgb(121, 121, 121), #554238);
+    background-image: linear-gradient(rgb(121, 121, 121), #232321);
     width: 100%;
     height: 920px;
 }
@@ -47,7 +47,7 @@ html {
     height: 100%;
     margin: 0 auto;
     display: flex;
-    background-image: linear-gradient(#6b6b6b, #554238);
+    background-image: linear-gradient(#6b6b6b, #273036);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
@@ -112,16 +112,17 @@ html {
 
     width: 30%;
     height: 100;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
 #skills-area{
 
     width: 100%;
     height: 65%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 #project1-2{
-
+    margin-top: 20px;
     width: 100%;
     height: 35%;
     display: flex;
@@ -129,13 +130,11 @@ html {
 #project1{
     width: 50%;
     height: 100%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
 #project2{
     width: 50%;
     height: 100%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
 #project3{
@@ -181,7 +180,26 @@ html {
     justify-content: center;
 }
 
+#contact-area{
+    width: 500px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgb(121, 121, 121), #ffffff);
+    border-radius: 20px;
+    
+
+}
+#message{
+height: 150px;
+    
+}
 /* CLASSES */
+
 .nav-bar-id{
     padding: 20px;
     list-style: none;
@@ -231,4 +249,15 @@ html {
 }
 .skills-desc{
     margin-left: 50px;
+}
+.format{
+    margin-bottom: 20px;
+}
+.input{
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.input-labels{
+    font-size: 25px;
 }
