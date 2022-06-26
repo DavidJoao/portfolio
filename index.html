@@ -14,6 +14,13 @@
 </head>
 <body id="body">
     <div id="nav-bar">
+        <div id="switchbar">
+            <p id="text-mode">Switch to Ligth Mode</p>
+            <label id="light-mode" class="switch">
+                <input id="check" type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
         <ul id="nav-list">
             <li class="nav-bar-id"><a class="nav-links" href="#first-pageoutline">About Me</a></li>
             <li class="nav-bar-id"><a class="nav-links" href="#second-page">Projects</a></li>
@@ -63,16 +70,16 @@
                         <h1 id="contact-me">Contact Me!</h1>
                         <h1 id="hide2" class="hide">Thank you for contacting me!</h1>
                         <h1 id="hide1" class="hide"> I'll get in contact with you!</h1>
-                        <form id="form">
+                        <form action="https://formsubmit.co/davidsandoval596@gmail.com" method="POST" id="form">
                             <label id="full-name" class="input-labels" for="name">Full Name</label>
-                            <input class="input" id="name" type="text" placeholder="Name">
+                            <input class="input" id="name" type="text" required placeholder="Name">
                             <label id="text-email" class="input-labels" for="email">Email</label>
-                            <input class="input" id="email" type="email" placeholder="user@gmail.com">
+                            <input class="input" id="email" type="email" required placeholder="user@gmail.com">
                             <label id="text-phone" class="input-labels" for="phone">Phone</label>
-                            <input class="input" id="phone" type="phone" placeholder="(XXX)-XXX-XXX">
+                            <input class="input" id="phone" type="phone" required placeholder="(XXX)-XXX-XXX">
                             <label id="text-message" class="input-labels" for="message">Message</label>
-                            <textarea class="input" id="message" type="text" placeholder="Write a message..."></textarea>
-                            <button id="submit">Submit</button>
+                            <textarea class="input" id="message" type="text" required placeholder="Write a message..."></textarea>
+                            <button type="submit" id="submit">Submit</button>
                         </form>
                         <div id="social-media">
                             <h1 id="find-me">Find me in social media:</h1>

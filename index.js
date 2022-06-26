@@ -11,6 +11,15 @@ let submit = document.getElementById('submit')
 let messageOne = document.getElementById('hide1')
 let messageTwo = document.getElementById('hide2')
 
+let firstPage = document.getElementById('first-page')
+let firstPageOutline = document.getElementById('first-pageoutline')
+let secondPage = document.getElementById('second-page')
+let secondPageOutline = document.getElementById('second-pageoutline')
+let thirdPage = document.getElementById('third-page')
+let thirdPageOutline = document.getElementById('third-pageoutline')
+let lightSwitch = document.getElementById('light-mode')
+let check = document.getElementById('check');
+let modeText = document.getElementById('text-mode')
 
 
 function contactMessage(){
@@ -29,4 +38,28 @@ function contactMessage(){
     messageOne.classList.remove('hide')
 }
 
+
+function handleLightMode(){
+    if(event.target.checked) {
+        modeText.style.color = 'black';
+        modeText.innerHTML = 'Switch to Dark Mode'
+        firstPageOutline.style.backgroundImage = "linear-gradient(#9e9e9e, #ffffff)";
+        secondPageOutline.style.backgroundImage = "linear-gradient(#9e9e9e, #ffffff)";
+        thirdPageOutline.style.backgroundImage = "linear-gradient(#9e9e9e, #ffffff)";
+        firstPage.style.backgroundImage = "url('https://thumbs.dreamstime.com/b/modern-minimal-white-random-shifted-honeycomb-hexagon-geometrical-pattern-background-flat-lay-top-view-above-d-illustration-201435921.jpg')"
+        secondPage.style.backgroundImage = "url('https://thumbs.dreamstime.com/b/modern-minimal-white-random-shifted-honeycomb-hexagon-geometrical-pattern-background-flat-lay-top-view-above-d-illustration-201435921.jpg')"
+        thirdPage.style.backgroundImage = "url('https://thumbs.dreamstime.com/b/modern-minimal-white-random-shifted-honeycomb-hexagon-geometrical-pattern-background-flat-lay-top-view-above-d-illustration-201435921.jpg')"
+    } else {
+        modeText.style.color = 'white';
+        modeText.innerHTML = 'Switch to Ligth Mode'
+        firstPageOutline.style.backgroundImage = "linear-gradient(#9e9e9e, #273036)";
+        secondPageOutline.style.backgroundImage = "linear-gradient(#9e9e9e, #273036)";
+        thirdPageOutline.style.backgroundImage = "linear-gradient(#9e9e9e, #273036)";
+        firstPage.style.backgroundImage = "url('https://c4.wallpaperflare.com/wallpaper/109/664/851/black-texture-wallpaper-preview.jpg')"
+        secondPage.style.backgroundImage = "url('https://c4.wallpaperflare.com/wallpaper/109/664/851/black-texture-wallpaper-preview.jpg')"
+        thirdPage.style.backgroundImage = "url('https://c4.wallpaperflare.com/wallpaper/109/664/851/black-texture-wallpaper-preview.jpg')"
+    }
+}
+
+check.addEventListener('click', handleLightMode);
 submit.addEventListener('click', contactMessage)
