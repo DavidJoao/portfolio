@@ -5,8 +5,7 @@ html {
 
 #body {
     margin: 0;
-    font-family: 'Arsenal', sans-serif;
-    font-family: 'Dongle', sans-serif;;
+    font-family: 'Libre Franklin', sans-serif;
 }
 #main{
     border: 1px solid black;
@@ -85,7 +84,7 @@ html {
     width: 350px;
     height: 350px;
     margin-top: 50px;
-    background-image: url("https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/273769724_4795165370551322_2418480384812829365_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_ohc=HsDfw_x0UC4AX9eh35D&_nc_ht=scontent-lax3-2.xx&oh=00_AT-zsPdJ8E_lYh4rdeyUhDaWC0xaiKlqiTpo19cEIv2R6w&oe=62B9D713");
+    background-image: url(/assets/myphoto.jpeg);
     background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
@@ -105,7 +104,7 @@ html {
 
 #my-name{
     font-size: 40px;
-    margin-top: 0;
+    margin-top: 30px;
 }
 #skills-projects{
 
@@ -138,6 +137,11 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 25px;
+
+}
+#descriptiontext{
+    padding: 5px;
 }
 
 #contact-area{
@@ -162,8 +166,6 @@ html {
 #message{
 height: 150px;
     
-}
-#social-media{
 }
 #find-me{
     margin-left: 35px;
@@ -231,7 +233,7 @@ height: 150px;
   }
   #text-mode{
     color:white;
-    font-size: 20px;
+    font-size: 15px;
     background-color: gray;
     border-radius: 10px;
     padding: 5px;
@@ -282,6 +284,16 @@ height: 150px;
 }
 #myprojectss{
     text-align: center;
+}
+#project3{
+    margin-top: 20px;
+}
+#containerpr{
+    position: relative;
+    left: 50px;
+}
+#contact-me{
+    font-weight:800;
 }
 /* CLASSES */
 
@@ -396,4 +408,102 @@ height: 150px;
 .container{
 
     display: none;
+}
+
+.repo-links{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 480px) {
+    body {
+        width:480px;   
+    }
+    #main{
+        width: 900px;
+    }
+    #first-pageoutline{
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #first-page{
+        height: 1200px;
+    }
+    #second-pageoutline{
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }   
+    #third-pageoutline{
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    #second-page{
+        height: 1350px;
+    }
+    #third-page{
+        height: 1100px;
+    }
+    #nav-list{
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+        position: fixed;
+        right: 10px;
+        background-color: gray;
+    }
+    #switchbar{
+        position: fixed;
+        left: 770px;
+        
+    }
+    .nav-bar-id{
+        background-color: gray;
+    }
+    #skills-projects{
+        width: 80%;
+        height: 50%;
+    }
+    #project-side{
+        width: 60%;
+        display: flex;
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+
+    #nav-list{
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+        position: fixed;
+        right: 10px;
+        background-color: gray;
+    }
+}
+
+@media (min-width: 1025px){
+    body {
+        
+    }
+    #nav-list{
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+        position: fixed;
+        right: 10px;
+        background-color: gray;
+    }
 }

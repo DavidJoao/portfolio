@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Dongle&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>David Sandoval: Portfolio</title>
 </head>
@@ -32,7 +33,7 @@
                 
                 <div id="who-ami" class="first-half">
                     <h1 class="my-text">Who am I?</h1>
-                    <p class="my-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.</p>
+                    <p class="my-text">I am a student at General Assembly and ex-student in computer science, based in California, passionate in the technology world and always open to learn and grow academically and professionaly, currently focusing in the fundamentals of web development.</p>
                 </div>
                 <div id="my-info" class="first-half">
                     <div id="my-pic"></div>
@@ -45,12 +46,12 @@
                         <div id="skills-area">
                             <h1 class="skills-desc" id="skills-title">Skills</h1>
                             <ul class="skills-desc">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>HTML/CSS Manipulation</li>
                             </ul>
-                            <p class="skills-desc">These skills helped me in bla bla bla projects to accomplish bla bla bla</p>
+                            <p id="descriptiontext" class="skills-desc">These are some of the programming languages that I have worked with during my process of getting into the technology world, as I am currrently working mostly in web development, you can see some of my projects by clicking on them and showing their description.</p>
                         </div>
                     </div>
                     <div class="project-boxes" id="project-side">
@@ -69,21 +70,21 @@
                               </div>                            
                               <div class="hide" id="first-description">
                                 <h1>Pixart</h1>
-                                <h2>This game bla bla</h2>
-                                <a href="https://git.generalassemb.ly/davidjoao/js-pixart-lite/tree/davidbranch">Link</a>
+                                <h2>It is a website where you are able to paint in one specific area, the user is able to change the color of the brush, reset the colored area, and use an eraser if they want to delete something.</h2>
+                                <a class="repo-links" href="https://git.generalassemb.ly/davidjoao/js-pixart-lite/tree/davidbranch" target="_blank">Link for Pixart JS repository</a>
                             </div>
                             <div class="hide" id="second-description">
                                 <h1>Tamagotchi</h1>
-                                <h2>This game bla bla</h2>
-                                <a href="">Link</a>
+                                <h2>This game currently in development interacts with the user giving them a pet to take care of, the pet can perform actions like eat, sleep, play in order to mantain the pet's physical and emotional stability.</h2>
+                                <a class="repo-links" href="https://git.generalassemb.ly/davidjoao/building-a-bigger-project" target="_blank">Link for Tamagotchi repository</a>
                             </div>
                             <div class="hide" id="third-description">
-                                <h1>Tic Tac Toe</h1>
-                                <h2>This game bla bla</h2>
-                                <a href="">Link</a>
+                                <h1>Tic Tac Toe</h1> 
+                                <h2>A game made for two users, instead of X's and O's is played with colors, first user in painting 3 blocks in a row or diagonal wins!</h2>
+                                <a class="repo-links" href="https://git.generalassemb.ly/davidjoao/tic-tac-toe" target="_blank">Link for Tic Tac Toe repository</a>
                             </div>  
-                              <div class="container">
-                                <img id="largePhoto" style="width:87%">
+                              <div id="containerpr" class="container">
+                                <img id="largePhoto" style="width:70%">
                                 <div id="textImage"></div>
                               </div>
                         </div>
@@ -98,13 +99,13 @@
                         <h1 id="hide1" class="hide"> I'll get in contact with you!</h1>
                         <form action="https://formsubmit.co/davidsandoval596@gmail.com" method="POST" id="form">
                             <label id="full-name" class="input-labels" for="name">Full Name</label>
-                            <input class="input" id="name" type="text" required placeholder="Name">
+                            <input class="input" id="name" type="text" placeholder="Name" required>
                             <label id="text-email" class="input-labels" for="email">Email</label>
-                            <input class="input" id="email" type="email" required placeholder="user@gmail.com">
+                            <input class="input" id="email" type="email" placeholder="user@gmail.com" required>
                             <label id="text-phone" class="input-labels" for="phone">Phone</label>
-                            <input class="input" id="phone" type="phone" required placeholder="(XXX)-XXX-XXX">
+                            <input class="input" id="phone" type="phone" placeholder="(XXX)-XXX-XXX" required>
                             <label id="text-message" class="input-labels" for="message">Message</label>
-                            <textarea class="input" id="message" type="text" required placeholder="Write a message..."></textarea>
+                            <textarea class="input" id="message" type="text" placeholder="Write a message..." required></textarea>
                             <button type="submit" id="submit">Submit</button>
                         </form>
                         <div id="social-media">
