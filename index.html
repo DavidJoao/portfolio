@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Dongle&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>David Sandoval: Portfolio</title>
 </head>
 <body id="body">
@@ -56,10 +55,37 @@
                     </div>
                     <div class="project-boxes" id="project-side">
                         <div id="project3">
-                            <h1>MY PROJECTS</h1>    
-                            <div class="pic-box" id="photo3"></div>
-                            <h1>Tamagotchi</h1>
-                            <p>Description</p>
+                            <h1 id="myprojectss">MY PROJECTS</h1>  
+                            <div class="row">
+                                <div class="column">
+                                  <img id="pixart" src="/assets/pixart.png" alt="Pixart" onclick="myGallery(this);">
+                                </div>
+                                <div class="column">
+                                  <img id="tama" src="/assets/tamagotchi.png" alt="Tamagotchi" onclick="myGallery(this);">
+                                </div>
+                                <div class="column">
+                                  <img id="tictac" src="/assets/tictac.png" alt="Tictactoe" onclick="myGallery(this);">
+                                </div>
+                              </div>                            
+                              <div class="hide" id="first-description">
+                                <h1>Pixart</h1>
+                                <h2>This game bla bla</h2>
+                                <a href="https://git.generalassemb.ly/davidjoao/js-pixart-lite/tree/davidbranch">Link</a>
+                            </div>
+                            <div class="hide" id="second-description">
+                                <h1>Tamagotchi</h1>
+                                <h2>This game bla bla</h2>
+                                <a href="">Link</a>
+                            </div>
+                            <div class="hide" id="third-description">
+                                <h1>Tic Tac Toe</h1>
+                                <h2>This game bla bla</h2>
+                                <a href="">Link</a>
+                            </div>  
+                              <div class="container">
+                                <img id="largePhoto" style="width:87%">
+                                <div id="textImage"></div>
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -86,6 +112,7 @@
                             <a href="https://www.linkedin.com/in/davidjoaosandoval/" target="_blank" class="fa fa-linkedin"></a>
                             <a href="https://www.instagram.com/david.jso/?hl=en" target="_blank" class="fa fa-instagram"></a>
                             <a href="https://twitter.com/tacodetripitas" target="_blank" class="fa fa-twitter"></a>
+                            <a class="fa fa-github" href="https://github.com/DavidJoao" target="_blank"></a>
                         </div>
 
                     </div><br>

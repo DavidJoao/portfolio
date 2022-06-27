@@ -21,7 +21,18 @@ let lightSwitch = document.getElementById('light-mode')
 let check = document.getElementById('check');
 let modeText = document.getElementById('text-mode')
 
+let enlargePhoto = document.getElementById('largePhoto')
+let textImage = document.getElementById('textImage')
+let tamagotchi = document.getElementById('tama')
+let ticTacToe = document.getElementById('tictac')
+let pixart = document.getElementById('pixart')
+let pixartDescription = document.getElementById('first-description')
+let tamaDescription = document.getElementById('second-description')
+let tictacDescription = document.getElementById('third-description')
 
+
+
+//FIRST JAVASCRIPT ACTION: SHOW SECOND PART OF CONTACT FORM
 function contactMessage(){
     contactMe.classList.add('hide')
     fullName.classList.add('hide')
@@ -38,7 +49,7 @@ function contactMessage(){
     messageOne.classList.remove('hide')
 }
 
-
+//SECOND JAVASCRIPT ACTION: LIGHT MODE AND DARK MODE
 function handleLightMode(){
     if(event.target.checked) {
         modeText.style.color = 'black';
@@ -61,5 +72,31 @@ function handleLightMode(){
     }
 }
 
+//THIRD JAVASCRIPT ACTION: GALLERY FOR PROJECTS 
+function myGallery(photos){
+    enlargePhoto.src = photos.src;
+    textImage.innerHTML = photos.alt;
+    enlargePhoto.parentElement.style.display = 'block';
+}
+function showTamagotchi(){
+    tamaDescription.classList.remove('hide');
+    pixartDescription.classList.add('hide');
+    tictacDescription.classList.add('hide');
+}
+function showTicTac(){
+    tamaDescription.classList.add('hide');
+    pixartDescription.classList.add('hide');
+    tictacDescription.classList.remove('hide');
+}
+function showPixart(){
+    tamaDescription.classList.add('hide');
+    pixartDescription.classList.remove('hide');
+    tictacDescription.classList.add('hide');
+}
+
+
+pixart.addEventListener('click', showPixart)
+ticTacToe.addEventListener('click', showTicTac)
+tamagotchi.addEventListener('click', showTamagotchi)
 check.addEventListener('click', handleLightMode);
 submit.addEventListener('click', contactMessage)
