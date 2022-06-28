@@ -62,7 +62,7 @@ function handleLightMode(){
         thirdPage.style.backgroundImage = "url('https://thumbs.dreamstime.com/b/modern-minimal-white-random-shifted-honeycomb-hexagon-geometrical-pattern-background-flat-lay-top-view-above-d-illustration-201435921.jpg')"
     } else {
         modeText.style.color = 'white';
-        modeText.innerHTML = 'Switch to Ligth Mode'
+        modeText.innerHTML = 'Switch to Light Mode'
         firstPageOutline.style.backgroundImage = "linear-gradient(#9e9e9e, #273036)";
         secondPageOutline.style.backgroundImage = "linear-gradient(#9e9e9e, #273036)";
         thirdPageOutline.style.backgroundImage = "linear-gradient(#9e9e9e, #273036)";
